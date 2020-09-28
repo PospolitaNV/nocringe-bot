@@ -4,11 +4,7 @@ nocringe.chat.id: ${CHAT_ID}
 nocringe.retra.link: ${RETRA_LINK}
 nocringe.chats: ${CHATS}
 
-kuranda:
-  id: ${KURANDA_ID}
-
-sasha:
-  id: ${SASHA_ID}
+nocringe.rules: ${RULES}
 
 server:
   port: ${PORT}
