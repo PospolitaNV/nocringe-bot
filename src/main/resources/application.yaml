@@ -1,0 +1,16 @@
+telegram.bot.token: ${BOT_TOKEN}
+
+nocringe.chat.id: ${CHAT_ID}
+nocringe.retra.link: ${RETRA_LINK}
+nocringe.chats: ${CHATS}
+
+kuranda:
+  id: ${KURANDA_ID}
+
+sasha:
+  id: ${SASHA_ID}
+
+server:
+  port: ${PORT}
+
+my.id: ${MY_ID}
