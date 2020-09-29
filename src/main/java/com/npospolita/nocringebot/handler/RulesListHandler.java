@@ -13,7 +13,7 @@ import org.springframework.util.StringUtils;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class RulesListHandler  implements Handler {
+public class RulesListHandler implements Handler {
 
     @Value("${nocringe.rules}")
     String rules;
