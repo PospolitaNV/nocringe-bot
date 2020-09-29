@@ -21,6 +21,6 @@ public class LeftChatHandler implements Handler {
 
     @Override
     public void handle(Update update) {
-        api.sendMessage(update, "https://www.youtube.com/watch?v=xfT645b6l0s", ParseMode.Markdown, true);
+        api.sendMessage(update, "https://www.youtube.com/watch?v=xfT645b6l0s", ParseMode.Markdown, false);
     }
 }

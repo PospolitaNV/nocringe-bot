@@ -29,7 +29,7 @@ public class ChatsListHandler implements Handler {
 
     @Override
     public void handle(Update update) {
-        api.sendMessage(update, chatList, ParseMode.Markdown, false);
+        api.sendMessage(update, chatList, ParseMode.Markdown, true);
     }
 
 }

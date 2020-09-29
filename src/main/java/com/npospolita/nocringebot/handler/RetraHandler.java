@@ -31,7 +31,7 @@ public class RetraHandler implements Handler {
 
     @Override
     public void handle(Update update) {
-        api.sendMessage(update, retraLink, ParseMode.Markdown, false);
+        api.sendMessage(update, retraLink, ParseMode.Markdown, true);
     }
 
 }

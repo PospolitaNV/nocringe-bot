@@ -22,10 +22,10 @@ public class TelegramApi {
 
     private final TelegramBot bot;
 
-    public void sendMessage(Update update, String text, ParseMode parseMode, boolean withPreview) {
+    public void sendMessage(Update update, String text, ParseMode parseMode, boolean disablePreview) {
         SendMessage request = new SendMessage(update.message().chat().id(), text)
                 .parseMode(parseMode)
-                .disableWebPagePreview(withPreview)
+                .disableWebPagePreview(disablePreview)
                 .disableNotification(true)
                 .replyToMessageId(update.message().messageId());
 

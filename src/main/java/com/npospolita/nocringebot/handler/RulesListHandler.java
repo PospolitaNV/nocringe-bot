@@ -31,6 +31,6 @@ public class RulesListHandler implements Handler {
 
     @Override
     public void handle(Update update) {
-        api.sendMessage(update, rules, ParseMode.Markdown, false);
+        api.sendMessage(update, rules, ParseMode.Markdown, true);
     }
 }
