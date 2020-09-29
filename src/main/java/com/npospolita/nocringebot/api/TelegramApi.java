@@ -70,7 +70,10 @@ public class TelegramApi {
     }
 
     private <T extends BaseRequest> BaseResponse execute(T request) {
+        log.info("request: {}", request);
         BaseResponse response = bot.execute(request);
+
+        log.info("response: {}", response);
 
         if (!response.isOk()) {
             log.error("error: {}", response);
