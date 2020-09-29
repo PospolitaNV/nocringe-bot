@@ -1,10 +1,7 @@
 package com.npospolita.nocringebot.api;
 
 import com.pengrad.telegrambot.TelegramBot;
-import com.pengrad.telegrambot.model.BotCommand;
-import com.pengrad.telegrambot.model.Message;
-import com.pengrad.telegrambot.model.Update;
-import com.pengrad.telegrambot.model.User;
+import com.pengrad.telegrambot.model.*;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.*;
 import com.pengrad.telegrambot.response.BaseResponse;
@@ -60,7 +57,8 @@ public class TelegramApi {
 
         GetChatMemberResponse chatMemberResponse = (GetChatMemberResponse) execute(getChatMember);
 
-        return chatMemberResponse.chatMember().isMember();
+        ChatMember chatMember = chatMemberResponse.chatMember();
+        return chatMember != null && chatMember.isMember();
     }
 
     private List<BotCommand> getCommands() {
