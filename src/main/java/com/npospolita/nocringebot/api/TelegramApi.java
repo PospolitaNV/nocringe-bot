@@ -58,7 +58,7 @@ public class TelegramApi {
         GetChatMemberResponse chatMemberResponse = (GetChatMemberResponse) execute(getChatMember);
 
         ChatMember chatMember = chatMemberResponse.chatMember();
-        return chatMember != null && chatMember.isMember();
+        return chatMember != null && chatMember.isMember() != null && chatMember.isMember();
     }
 
     private List<BotCommand> getCommands() {
